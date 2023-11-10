@@ -1,0 +1,37 @@
+:root
+{
+    --primary-color: brown;
+    --coustom-width: 370px;
+}
+.container
+{
+    background-color: beige;
+    border: 2px solid black;
+    height: 650px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box
+{
+    background-color: rgb(132, 0, 255);
+    border: 1px solid brown;
+    width: 330px;
+    height: var(--coustom-width);
+    margin: 5px;
+    padding: 5px;
+    overflow: auto;
+    /* box-shadow: 35px 20px brown; */
+    box-shadow: 15px 15px 15px 10px var(--primary-color);
+    
+}
+img
+{
+    width: 100px;
+    height: 100px;
+}
+h2
+{
+    text-shadow: 3px 3px 2px whitesmoke;
+}

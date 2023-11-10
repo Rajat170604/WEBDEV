@@ -1,0 +1,35 @@
+h1
+{
+    text-align: center;
+    text-decoration: dotted;
+    font-size: 50px;
+    font-style: inherit;
+}
+
+p
+{
+    /* font-style: italic; */
+    text-align: center;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#abc
+{
+    color: rgb(131, 34, 83);
+}
+
+#def
+{
+    color: rgb(12, 114, 173);
+}
+
+#ghi
+{
+    color: hsl(258, 79%, 38%);
+}
+
+.first
+{
+    color: hsla(0, 95%, 8%, 0.616);
+}

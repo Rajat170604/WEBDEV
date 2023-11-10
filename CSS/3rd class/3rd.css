@@ -1,0 +1,41 @@
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(23, 179, 218, 0.623);
+    color: rgb(216, 27, 27);
+    font-style: initial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:solid blueviolet 4px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+p
+{
+    font-size: 25px;
+    font-family: cursive;
+    font-style: oblique;
+    border:solid blueviolet 4px;
+    border-radius: 5px;
+}
+
+#one
+{
+    background-color: cadetblue;
+}
+
+#two
+{
+    background-color: darkcyan;
+}
+
+#three
+{
+    background-color: darkseagreen;
+}
+
+#four
+{
+    background-color: darkolivegreen;
+}

@@ -1,0 +1,14 @@
+.box
+{
+    background-color: #63c4b7;
+    border: 2px solid silver;
+    width: 250px;
+    height: 300px;
+}
+@media (max-width:500px) 
+{
+    .box
+    {
+        background-color: chartreuse;
+    }
+}

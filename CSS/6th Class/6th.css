@@ -1,0 +1,24 @@
+
+        *
+        {
+            margin: 0%;
+            padding: 0%;
+        }
+        .container
+        {
+            border: 2px solid green;
+            height: 100vh;
+            width: 50vw;
+        }
+        .parent
+        {
+            border: 2px solid black;
+            background: #1474b4bb;
+            width: 50%;
+        }
+.child
+    {
+        border: 2px dotted yellow;
+        background: #511ca734;
+        width: 20%;
+    }

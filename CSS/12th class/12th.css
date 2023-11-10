@@ -1,0 +1,24 @@
+.box
+{
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    background-color: darkolivegreen;
+    border: 3px solid black;
+    /* transition-property: all;
+    transition-duration: 5s;
+    transition-delay: 1s;
+    transition-timing-function: linear; */
+    /* property name | duration | easing function | delay */
+    /* transition: all 4s ease-in-out 1s */
+    transition:
+    margin-left 4s,
+    color 1s;
+}
+.box:hover
+{
+    /* width: 1575px;
+    height: 765px; */
+    background-color: chocolate;
+    margin-left: 200px;
+}

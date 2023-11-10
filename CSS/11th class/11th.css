@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+    border: 5px dashed grey;
+}
+.box
+{
+    height: 75px;
+    width: 150px;
+    background-color: rgb(23, 96, 145);
+    border: 5px solid rgb(243, 0, 73);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    /* animation-name: rajat;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 10ms;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+    /* @keyframes duration | easing-function | delay |iteration-count | direction | fill-mode | play-state | name */
+    animation: 5s linear 1s infinite alternate none running rajat;
+    ;
+}
+@keyframes rajat
+{
+    from
+    {
+        top: 0;
+        left: 0;
+    }
+    to
+    {
+        top: 0;
+        left: 1430px;
+    }
+}
+.box1
+{
+    height: 75px;
+    width: 150px;
+    background-color: rgb(23, 96, 145);
+    border: 5px solid rgb(243, 0, 73);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    /* @keyframes duration | easing-function | delay |iteration-count | direction | fill-mode | play-state | name */
+    animation: 5s linear 1s infinite alternate none running rajat1;
+}
+@keyframes rajat1
+{
+    from
+    {
+        top: 570px;
+        left: 1430px;
+    }
+    to
+    {
+        top: 570px;
+        left: 0px;
+    }
+}
+.circle
+{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(51, 2, 66);
+    border: 5px solid rgba(216, 94, 38, 0.979);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 185px;
+    left: 715px;
+    animation: 10s linear 0s infinite alternate none running rajat2;
+}
+@keyframes rajat2
+{
+    0%
+    {
+        top: 1%;
+        left: 5%;
+    }
+    25%
+    {
+        top: 1%;
+        left: 90%;
+    }
+    50%
+    {
+        top: 70%;
+        left: 90%;
+    }
+    100%
+    {
+        top: 70%;
+        left: 5%;
+    }
+}
