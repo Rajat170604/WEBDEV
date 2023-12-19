@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="heading">
+            <h1>
+                Number Guessing Game
+            </h1>
+        </div>
+
+        <div class="body">
+
+            <div>
+                <p>
+                    Try and guess a random number between 1 to 100.<br>You have 10 attempts to guess the right number.
+                </p>
+            </div>
+
+            <div class="guess">
+                <form>
+                    <label for="guess">
+                        <h2>
+                            Guess a Number
+                        </h2>
+                    </label><br>
+                    <input type="number" class="userip">
+                </form>
+            </div>
+
+            <div>
+                <button class="submit">
+                    Submit Guess
+                </button>
+            </div>
+
+            <div class="resultParameter">
+                <p>
+                    Previous Guesses: <span class="numberOfGuesses"></span>
+                </p>
+                <p>
+                    Guesses Remaining: <span class="lastResult">10</span>
+                </p>
+                <p class="lowOrHigh">
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

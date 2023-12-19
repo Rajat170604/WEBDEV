@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning 4</title>
+</head>
+
+<body style="background-color: #000; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // add
+    function addLang(langName) {
+        const li = document.createElement('li');
+        const text = document.createTextNode(`${langName}`);
+        li.appendChild(text);
+        document.querySelector(".language").appendChild(li)
+    }
+    addLang("Java")
+    addLang("cpp")
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${langName}`))
+        document.querySelector(".language").appendChild(li)
+    }
+    addOptiLang("c")
+
+
+    // edit
+    const li = document.createElement('li');
+    li.textContent = "python"
+    document.querySelector("li:nth-child(1)").replaceWith(li)
+
+
+    // remove
+    document.querySelector("li:last-child").remove()
+
+</script>
+
+</html>

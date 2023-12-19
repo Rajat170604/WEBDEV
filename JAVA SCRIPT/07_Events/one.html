@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Events in JS</h1>
+        <ul id="list">
+            <li>
+                <h3 id="one" alt="firstId"><span>1</span></h3>
+            </li>
+            <li>
+                <h3 id="two"><span>2</span></h3>
+            </li>
+            <li>
+                <h3 id="three"><span>3</span></h3>
+            </li>
+            <li>
+                <h3 id="four"><span>4</span></h3>
+            </li>
+            <li>
+                <h3 id="google"><a href="https://www.google.com">Google</a></h3>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    
+    // document.getElementById('one').onclick = function () {
+    //     alert(`1 clicked`)
+    // }
+
+    // attachEvent()
+    // jQuery - onEvent()
+    
+    // type, timeStamp, defaultPrevented, target, toElememnt, srcElement, currenttarget, 
+    // clientX, clientY, screenX, screeny, altKey, ctrlKey, shiftKey, keyCode
+
+    // document.getElementById('one').addEventListener('click', function (e) {
+    //     // alert(`one clicked`)
+    //     console.log(e);
+    // }, false)
+
+    // document.getElementById('list').addEventListener('click', function (e) {
+        // console.log(`ul clicked`);
+    // }, false)
+
+    // document.getElementById('one').addEventListener('click', function (e) {
+        // console.log(`one clicked`);
+    // }, false)
+
+    // document.getElementById('list').addEventListener('click', function (e) {
+    //     console.log(`ul clicked`);
+    // }, false)
+
+    // document.getElementById('one').addEventListener('click', function (e) {
+    //     console.log(`one clicked`);
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function (e) {
+    //     console.log(`google clicked`);
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    // }, false)
+
+    document.querySelector('#list').addEventListener('click', function(e) {
+        // console.log(e);
+        // console.log(e.target);
+        // console.log(e.target.parentNode);
+        if (e.target.tagName === 'SPAN') {
+            let removeIt = e.target.parentNode.parentNode
+            removeIt.remove()
+            console.log(e.target.parentNode.id);
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    })
+
+</script>
+
+</html>
